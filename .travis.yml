@@ -2,8 +2,9 @@ language: java
 sudo: required
 
 before_install:
-  - sudo apt-get update -y
-  - sudo apt-get install oracle-java8-installer -y
+  - apt-get purge oracle-java7-installer
+  - apt-get update
+  - apt-get install oracle-java8-installer
 
 install:
   - mvn clean
