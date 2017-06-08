@@ -1,6 +1,9 @@
 language: java
 sudo: enabled
 
+before_install:
+  - yum install java -y
+
 install:
   - mvn clean
   - mvn install
