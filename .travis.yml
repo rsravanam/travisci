@@ -1,8 +1,5 @@
 language: java
-sudo: enabled
-
-before_install:
-  - yum install java -y
+sudo: required
 
 install:
   - mvn clean
