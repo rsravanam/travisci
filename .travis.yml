@@ -4,9 +4,6 @@ sudo: required
 before_install:
 #  - sudo apt-get purge oracle-java7-installer
   - sudo apt-get update
-  - sudo apt-get install python-software-properties
-  - sudo apt-add-repository ppa:webupd8team/java
-  - sudo apt-get update
   - sudo apt-get install oracle-java8-installer
   - java -version
 #  - export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
