@@ -1,5 +1,13 @@
 language: java
-sudo: enabled
+sudo: required
+
+before_install:
+#  - sudo apt-get purge oracle-java7-installer
+  - sudo apt-get update
+  - sudo apt-get install oracle-java8-installer
+  - export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
+  - export PATH=$JAVA_HOME/bin:$PATH
 
 install:
-  - mvn clean install compile
+  - mvn clean
+  - mvn install
