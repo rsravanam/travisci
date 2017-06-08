@@ -2,3 +2,8 @@
 traget/**
 traget/*
 push.bat
+.settings/**
+.settings/*
+.classpath
+.project
+.gitignore
